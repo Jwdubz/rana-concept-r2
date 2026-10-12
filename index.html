@@ -12,66 +12,85 @@
 <link rel="preload" as="image" href="media/hero.jpg">
 <script type="text/javascript">(function(w,d){w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments)};var done=0,ev=["scroll","pointerdown","keydown"],o={passive:true,capture:true};function go(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,go,o)});var t=d.createElement("script");t.async=1;t.src="https://www.clarity.ms/tag/yvve5xueah";var y=d.getElementsByTagName("script")[0];y.parentNode.insertBefore(t,y)}ev.forEach(function(e){w.addEventListener(e,go,o)});function idle(){w.requestIdleCallback?w.requestIdleCallback(go,{timeout:2500}):setTimeout(go,2500)}d.readyState==="complete"?idle():w.addEventListener("load",idle,{once:true})})(window,document);clarity("set","site","rana-r2");</script>
 <link rel="stylesheet" href="style.css?v=6">
+<link rel="stylesheet" href="r3.css?v=1">
 </head>
 <body>
 <header class="nav">
   <a class="mark" href="#top" aria-label="Rana Levy, top">Rana Levy</a>
-    <div class="nav-btns"><a class="nav-cta" href="ready.html">Shop</a><a class="nav-cta" href="https://www.ranalevyjewelry.com/contact">Custom Consult</a></div>
+    <div class="nav-btns"><a class="nav-cta" href="ready.html">Shop</a><a class="nav-cta nav-cta--solid" href="https://www.ranalevyjewelry.com/contact">Custom Consult</a></div>
 </header>
 
 <main id="top">
 <section class="hero">
-  <video class="hero-film" autoplay muted loop playsinline preload="auto" poster="media/hero.jpg" aria-label="Rana Levy's rings stacked across a hand, then a teal sapphire and a hexagon-set diamond turning in the light">
-    <source src="media/hero.mp4" type="video/mp4">
-  </video>
-  <div class="hero-copy">
+  <div class="hero-stage">
+    <video class="hero-film" autoplay muted loop playsinline preload="auto" poster="media/hero.jpg" data-src-d="media/hero.mp4" data-src-m="media/hero-m.mp4" data-poster-m="media/hero-m.jpg" aria-label="Rana Levy's rings stacked across a hand, then a teal sapphire and a hexagon-set diamond turning in the light"></video>
     <h1 class="title" aria-label="Rana Levy"><span class="w">Rana</span> <span class="w it">Levy</span></h1>
-    <p class="lede">She cuts the stone. She engraves the gold. The ring you wear passed through one pair of hands.</p>
-    <div class="ctas"><a class="btn" href="https://www.ranalevyjewelry.com/contact">Start your ring</a><a class="link" href="#cuts">See her cuts</a></div>
   </div>
-  <svg class="facet" viewBox="0 0 120 120" aria-hidden="true"><path pathLength="1" d="M60 6 106 33v54L60 114 14 87V33Z M60 6v108 M14 33l92 54 M106 33 14 87"/></svg>
+  <div class="hero-band">
+    <p class="lede rv">She cuts the stone. She engraves the gold. The ring you wear passed through one pair of hands.</p>
+    <div class="ctas rv"><a class="btn" href="https://www.ranalevyjewelry.com/contact">Start your ring</a><a class="btn btn--ghost" href="#cuts">See her cuts</a></div>
+  </div>
 </section>
 
 <section class="bench-intro" id="bench">
+  <div class="bench-gem rv">
+    <svg class="gem" viewBox="0 0 200 200" aria-hidden="true"><defs><linearGradient id="gg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6e7c8"/><stop offset=".5" stop-color="#d8b57c"/><stop offset="1" stop-color="#6b4f22"/></linearGradient><linearGradient id="gl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><clipPath id="gc"><path d="M100 10 178 55v90l-78 45-78-45V55Z"/></clipPath></defs>
+<g class="gem-f"><path d="M100 10 140 55H60Z"/><path d="M100 10 178 55H140Z"/><path d="M100 10 60 55H22Z"/><path d="M22 55h38l-38 90Z"/><path d="M178 55h-38l38 90Z"/><path d="M60 55h80l-40 70Z"/><path d="M60 55 22 145l78-20Z"/><path d="M140 55l38 90-78-20Z"/><path d="M22 145l78-20v65Z"/><path d="M178 145l-78-20v65Z"/></g>
+<g clip-path="url(#gc)"><rect class="gem-glint" x="-120" y="-20" width="70" height="240" fill="url(#gl)" transform="rotate(18 100 100)"/></g>
+<path class="gem-edge" d="M100 10 178 55v90l-78 45-78-45V55Z M22 55h156 M60 55l40 70 40-70 M100 125v65 M22 145l78-20 78 20"/></svg>
+    <ul class="facts">
+      <li><b>6</b><span>years at the cutting wheel</span></li>
+      <li><b>1</b><span>pair of hands, stone to setting</span></li>
+      <li><b>LV</b><span>home studio, Las Vegas</span></li>
+    </ul>
+  </div>
   <div class="bench-text">
-    <h2>A home studio on the quiet edge of Las&nbsp;Vegas.</h2>
-    <p>Cut, engraved and set by her. Six years at the cutting wheel. Every design drawn, built and refined at her own bench, then carried from the workbench straight to your finger.</p>
+    <h2 class="rv-lines">A home studio on the quiet edge of Las&nbsp;Vegas.</h2>
+    <p class="rv">Cut, engraved and set by her. Six years at the cutting wheel. Every design drawn, built and refined at her own bench, then carried from the workbench straight to your finger.</p>
   </div>
 </section>
 <section class="bench">
   <div class="bench-stick">
-    <div class="bench-frame"><video class="bench-film" autoplay muted loop playsinline preload="auto" poster="media/bench.jpg" aria-label="At Rana's bench: faceted stones held in tweezers, gold engraved by hand, a row of finished cuts, rings turning in the light"><source src="media/bench.mp4" type="video/mp4"></video></div>
+    <div class="bench-frame"><video class="bench-film" autoplay muted loop playsinline preload="auto" poster="media/bench.jpg" data-src-d="media/bench.mp4" data-src-m="media/bench-m.mp4" data-poster-m="media/bench-m.jpg" aria-label="At Rana's bench: faceted stones held in tweezers, gold engraved by hand, a row of finished cuts, rings turning in the light"></video></div>
   </div>
 </section>
 
 <section class="cuts" id="cuts">
   <div class="cuts-head">
-    <h2>Look closer.<br><em>Then closer again.</em></h2>
-    <p>Her pieces are made to pull your eye to places you didn't notice the first time. These are hers, cut and set in her studio.</p>
+    <h2 class="rv-lines">Look closer.<br><em>Then closer again.</em></h2>
+    <p class="rv">Her pieces are made to pull your eye to places you didn't notice the first time. These are hers, cut and set in her studio. Drag to see more.</p>
   </div>
-  <div class="cut-row">
-    <a class="cut" href="https://www.ranalevyjewelry.com/shop"><div class="ph"><img src="media/made-65722f539b4fcc44f6bedaa7.jpg" alt="Blue lab sapphire cut in Rana's Hibiscus design" loading="lazy" width="800" height="800"></div><h3>Hibiscus</h3><p>Her own design. Flowers within flowers, ten sides, frosted petals on the crown.</p></a>
-    <a class="cut" href="https://www.ranalevyjewelry.com/shop"><div class="ph"><img src="media/made-657231f9263fd234be0831f7.jpg" alt="Sea-foam lab sapphire in the Hanami cut" loading="lazy" width="800" height="800"></div><h3>Hanami</h3><p>Sea-foam teal, cut by her. Better turning in your hand than in any photo.</p></a>
-    <a class="cut" href="https://www.ranalevyjewelry.com/shop"><div class="ph"><img src="media/made-6a35991abbaef61d5bb3887e.jpg" alt="Madagascar pink sapphire in a 14kt gold ring hand-engraved with stars and swirls" loading="lazy" width="800" height="800"></div><h3>Stars &amp; swirls</h3><p>A Madagascar pink sapphire in 14kt gold, ribbons of celestial engraving cut by hand.</p></a>
+  <div class="cut-row" tabindex="0" aria-label="Rana's pieces, drag or swipe to scroll">
+    <a class="cut" href="https://www.ranalevyjewelry.com/shop-i1Da8/p/82mm-blue-lab-sapphire-hibiscus-gemstone-blue-sapphires-sapphire-gemstone-synthetic-sapphire-lab-grown-gem-blue-gem-1" target="_blank" rel="noopener" draggable="false"><div class="ph"><img src="media/made-65722f539b4fcc44f6bedaa7.jpg" alt="Blue lab sapphire cut in Rana's Hibiscus design" loading="lazy" width="800" height="800" draggable="false"></div><h3>Hibiscus</h3><p>Her own design. Flowers within flowers, ten sides, frosted petals on the crown.</p><span class="cut-go">View this piece &rarr;</span></a>
+    <a class="cut" href="https://www.ranalevyjewelry.com/shop-i1Da8/p/made-to-order-2-carat-sea-foam-lab-sapphire-green-sapphire-sapphire-gemstone-synthetic-sapphire-synthetic-gem-teal-gem-teal-gems" target="_blank" rel="noopener" draggable="false"><div class="ph"><img src="media/made-657231f9263fd234be0831f7.jpg" alt="Sea-foam lab sapphire in the Hanami cut" loading="lazy" width="800" height="800" draggable="false"></div><h3>Hanami</h3><p>Sea-foam teal, cut by her. Better turning in your hand than in any photo.</p><span class="cut-go">View this piece &rarr;</span></a>
+    <a class="cut" href="https://www.ranalevyjewelry.com/shop-i1Da8/p/4x7pze5i2silr0s3zif673u5qntwr5" target="_blank" rel="noopener" draggable="false"><div class="ph"><img src="media/made-6a35991abbaef61d5bb3887e.jpg" alt="Madagascar pink sapphire in a 14kt gold ring hand-engraved with stars and swirls" loading="lazy" width="800" height="800" draggable="false"></div><h3>Stars &amp; swirls</h3><p>A Madagascar pink sapphire in 14kt gold, ribbons of celestial engraving cut by hand.</p><span class="cut-go">View this piece &rarr;</span></a>
+    <a class="cut" href="https://www.ranalevyjewelry.com/shop-i1Da8/p/maple-leaf-ring-with-czochralski-alexandrite-14kt-gold-and-10kt-gold-size-6-maple-leaves-mixed-gold-ring-precision-cut-gemstone" target="_blank" rel="noopener" draggable="false"><div class="ph"><img src="assets/catalog/made-65722fd886f859321416c8e6.jpg" alt="Mixed gold maple leaf ring with a Czochralski alexandrite and moissanite" loading="lazy" width="800" height="800" draggable="false"></div><h3>Maple leaf</h3><p>Mixed 14kt and 10kt gold leaves around a Czochralski alexandrite.</p><span class="cut-go">View this piece &rarr;</span></a>
+    <a class="cut" href="https://www.ranalevyjewelry.com/shop-i1Da8/p/made-to-order-blue-lab-sapphire-blue-lab-sapphire-sapphire-gemstone-lab-sapphire-synthetic-gem-blue-gem-lab-sapphire-gemstone-6" target="_blank" rel="noopener" draggable="false"><div class="ph"><img src="assets/catalog/made-6572312d9b4fcc44f6bedc53.jpg" alt="Blue lab sapphire cut as a hexagon" loading="lazy" width="800" height="800" draggable="false"></div><h3>Blue hexagon</h3><p>A blue lab sapphire cut to a clean hexagon, made to order.</p><span class="cut-go">View this piece &rarr;</span></a>
+    <a class="cut" href="https://www.ranalevyjewelry.com/shop-i1Da8/p/made-to-order-14kt-white-gold-lab-sapphire-gem-snowflake-pendant-snowflake-gem-snowflake-jewelry-lab-sapphire-gemstone-blue-sapphire" target="_blank" rel="noopener" draggable="false"><div class="ph"><img src="assets/catalog/made-657151b7190c5e2711d157f8.jpg" alt="Lab sapphire snowflake pendant in 14kt white gold" loading="lazy" width="800" height="800" draggable="false"></div><h3>Snowflake</h3><p>A lab sapphire snowflake pendant in 14kt white gold.</p><span class="cut-go">View this piece &rarr;</span></a>
   </div>
 </section>
 
 <section class="ways" id="ways">
-  <h2>Three ways to make one yours.</h2>
+  <h2 class="rv-lines">Three ways to make one yours.</h2>
   <ol class="way-list">
-    <li><span class="wn">01</span><div><h3>Ready to ship</h3><p>Finished rings and loose stones, gift-wrapped and out the door in days.</p></div><a href="ready.html">Shop ready now</a></li>
-    <li><span class="wn">02</span><div><h3>Made to order</h3><p>Pick a setting or a cut. She makes it for you, in your gold, in weeks.</p></div><a href="made.html">Shop made to order</a></li>
-    <li><span class="wn">03</span><div><h3>Yours alone</h3><p>Claim a stone, then book a consult. You and Rana design the ring around it.</p></div><a href="https://www.ranalevyjewelry.com/contact">Begin</a></li>
+    <li class="rv"><span class="wn">01</span><div><h3>Ready to ship</h3><p>Finished rings and loose stones, gift-wrapped and out the door in days.</p></div><a href="ready.html">Shop ready now</a></li>
+    <li class="rv"><span class="wn">02</span><div><h3>Made to order</h3><p>Pick a setting or a cut. She makes it for you, in your gold, in weeks.</p></div><a href="made.html">Shop made to order</a></li>
+    <li class="rv"><span class="wn">03</span><div><h3>Yours alone</h3><p>Claim a stone, then book a consult. You and Rana design the ring around it.</p></div><a href="https://www.ranalevyjewelry.com/contact">Begin</a></li>
   </ol>
 </section>
 
 <section class="close">
-  <blockquote>“Join me on this journey and discover the magic of gems.”<cite>Rana Levy</cite></blockquote>
-  <a class="btn big" href="https://www.ranalevyjewelry.com/contact">Book a consult with Rana</a>
+  <blockquote class="rv">“Join me on this journey and discover the magic of gems.”<cite>Rana Levy</cite></blockquote>
+  <a class="btn big rv" href="https://www.ranalevyjewelry.com/contact">Book a consult with Rana</a>
 </section>
 </main>
-<footer class="foot"><span>Rana Levy Jewelry · Las Vegas, Nevada</span><span>Concept by Jarrett Wroten</span></footer>
-<script src="main.js?v=4"></script>
+<footer class="foot">
+  <div class="foot-brand"><svg class="foot-mark" viewBox="0 0 120 120" aria-hidden="true"><path d="M60 6 106 33v54L60 114 14 87V33Z M60 6v108 M14 33l92 54 M106 33 14 87"/></svg><div><p class="foot-name">Rana Levy Jewelry</p><p class="foot-sub">Precision-cut gemstones and hand-engraved gold</p></div></div>
+  <div class="foot-col"><p class="foot-k">Studio</p><p>Home studio, Las Vegas, Nevada</p><p>Cut, engraved and set by Rana</p></div>
+  <div class="foot-col"><p class="foot-k">Work with her</p><p>Ready to ship, made to order, or designed with you</p></div>
+</footer>
+<button class="pause" type="button" aria-pressed="false" aria-label="Pause motion"><span class="pause-i" aria-hidden="true"></span><span class="pause-t">Pause</span></button>
+<script src="main.js?v=5"></script>
 <!-- jw-book:start -->
 <style>
 .jw-book{position:relative;z-index:50;clear:both;display:flex;flex-direction:column;align-items:center;gap:12px;padding:40px 20px calc(44px + env(safe-area-inset-bottom));background:#020005;text-align:center;font-family:inherit;margin:0}
