@@ -1,0 +1,22 @@
+/* r2 skin over Jarrett's original Ready Now / Made To Order shop shell */
+:root{--ink:#0c0b0e;--cream:#f3ece2;--cream-soft:rgba(243,236,226,.8);--cream-faint:rgba(243,236,226,.66);--cream-mute:rgba(243,236,226,.66);--link-line:rgba(216,181,124,.6);--hairline:rgba(243,236,226,.16);--hairline-strong:rgba(216,181,124,.45);--focus:#d8b57c;--type:"Fraunces",Georgia,serif;--gold:#d8b57c;--sans:"Manrope",system-ui,sans-serif;--g:clamp(1.25rem,4vw,3.5rem);--shell-pad-top:calc(6.5rem + env(safe-area-inset-top,0px))}
+html,body.shell-body{background:#0c0b0e;overflow-x:clip}
+.shell-ground__image{opacity:.28;filter:saturate(.8)}
+.r2-chrome{position:fixed;inset:0 0 auto;z-index:30;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.1rem var(--g);background:rgba(12,11,14,.72);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.r2-mark{font:400 1.35rem/1 "Fraunces",Georgia,serif;color:#f3ece2;text-decoration:none;letter-spacing:.01em}
+.r2-cta{font:500 .92rem/1 var(--sans);color:#f3ece2;text-decoration:none;border:1px solid rgba(243,236,226,.4);padding:.6rem 1.1rem;border-radius:99px;white-space:nowrap;transition:background .3s,color .3s}
+.r2-cta:hover{background:#f3ece2;color:#0c0b0e}
+.tray-intro h1{font-family:"Fraunces",Georgia,serif;font-weight:300;letter-spacing:-.03em}
+.tray-intro p{color:var(--gold);font-family:var(--sans)}
+.tray-field label,.tray-count,.tray-status{font-family:var(--sans);letter-spacing:.04em}
+.tray-field label{color:var(--gold)}
+.tray-field input,.tray-field select{font-family:var(--sans);color:#f3ece2}
+.tray-field select option{background:#141217;color:#f3ece2}
+.piece__price{color:var(--gold)}
+.r2-foot{position:relative;z-index:2;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:2rem var(--g);color:rgba(243,236,226,.66);font:400 .9rem/1.4 var(--sans);border-top:1px solid rgba(243,236,226,.12)}
+.r2-foot a{color:#f3ece2;text-decoration:none;border-bottom:1px solid var(--gold)}
+.r2-btns{display:flex;gap:.5rem}
+.r2-switch{position:relative;z-index:2;display:flex;gap:1.5rem;font:500 .95rem/1 var(--sans);margin-bottom:1.5rem}
+.r2-switch a{color:rgba(243,236,226,.66);text-decoration:none;padding-bottom:.35rem;border-bottom:1px solid transparent}
+.r2-switch a[aria-current]{color:#f3ece2;border-color:#d8b57c}
+@media(max-width:420px){.r2-chrome{padding:.9rem 1rem;gap:.5rem}.r2-mark{font-size:1.1rem}.r2-cta{font-size:.8rem;padding:.55rem .75rem}}
