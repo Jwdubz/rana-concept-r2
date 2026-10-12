@@ -11,7 +11,8 @@ function tick(){
  
 }
 addEventListener('scroll',tick,{passive:true});addEventListener('resize',tick);tick();
-new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){bv.play().catch(()=>{})}else bv.pause()}),{threshold:.15}).observe(bv);
+const tryBench=()=>{const r=bv.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight){if(bv.paused)bv.play().catch(()=>{})}else if(!bv.paused)bv.pause()};
+new IntersectionObserver(es=>es.forEach(e=>{e.isIntersecting?bv.play().catch(()=>{}):bv.pause()}),{threshold:0}).observe(bench);addEventListener("scroll",tryBench,{passive:true});["touchstart","click"].forEach(t=>addEventListener(t,tryBench,{once:true,passive:true}));tryBench();
 document.querySelectorAll('.cut .ph').forEach(p=>p.addEventListener('pointermove',e=>{const b=p.getBoundingClientRect();p.style.setProperty('--mx',(e.clientX-b.left)+'px');p.style.setProperty('--my',(e.clientY-b.top)+'px')}));
 const hv=document.querySelector('.hero-film');hv.play&&hv.play().catch(()=>{});
 })();

@@ -83,3 +83,18 @@ cite{display:block;font:500 1rem var(--sans);font-style:normal;color:var(--gold)
 .nav-btns{display:flex;gap:.5rem}
 @media(max-width:420px){.nav{padding:.9rem 1rem;gap:.5rem}.mark{font-size:1.1rem}.nav-cta{font-size:.8rem;padding:.55rem .75rem;white-space:nowrap}}
 .hero .title,.hero .lede,.hero .ctas .link{text-shadow:0 1px 3px rgba(0,0,0,.55),0 2px 18px rgba(0,0,0,.45)}
+/* mobile QA fixes r2.1 */
+.nav-cta,.mark{display:inline-flex;align-items:center;min-height:44px}
+.hero .ctas .link{display:inline-flex;align-items:center;min-height:44px;padding-bottom:0}
+@media(max-width:700px){
+ .hero{height:auto;min-height:0;flex-direction:column;align-items:stretch;justify-content:flex-start;background:var(--ink)}
+ .hero-film{position:relative;inset:auto;width:100%;height:auto;aspect-ratio:2/1;object-fit:contain;flex:none;margin-top:76px}
+ .hero-copy{padding:1.6rem var(--g) 2.2rem;background:var(--ink)}
+ .hero .title,.hero .lede,.hero .ctas .link,.lede{text-shadow:none}
+}
+@media(max-width:700px){
+ .bench{height:auto}
+ .bench-stick{position:relative;height:auto;padding:0 0 2rem}
+ .bench-frame{transform:none;border-radius:0;height:auto;aspect-ratio:2/1}
+ .bench-film{object-fit:contain;height:auto;aspect-ratio:2/1}
+}

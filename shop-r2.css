@@ -20,3 +20,7 @@ html,body.shell-body{background:#0c0b0e;overflow-x:clip}
 .r2-switch a{color:rgba(243,236,226,.66);text-decoration:none;padding-bottom:.35rem;border-bottom:1px solid transparent}
 .r2-switch a[aria-current]{color:#f3ece2;border-color:#d8b57c}
 @media(max-width:420px){.r2-chrome{padding:.9rem 1rem;gap:.5rem}.r2-mark{font-size:1.1rem}.r2-cta{font-size:.8rem;padding:.55rem .75rem}}
+/* mobile QA fixes r2.1 */
+.r2-cta,.r2-mark{display:inline-flex;align-items:center;min-height:44px}
+.r2-switch a{display:inline-flex;align-items:center;min-height:44px;padding-bottom:0}
+.piece__title a,.piece__title button{display:inline-flex;align-items:center;min-height:44px}
