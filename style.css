@@ -29,7 +29,7 @@ img,video{display:block;max-width:100%}
 .facet path{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2.4s .9s cubic-bezier(.6,0,.2,1) forwards}
 @keyframes draw{to{stroke-dashoffset:0}}
 /* bench */
-.bench{position:relative;height:320vh;background:var(--ink)}
+.bench{position:relative;height:240vh;background:var(--ink)}
 .bench-stick{position:sticky;top:0;height:100svh;display:grid;place-items:center;overflow:hidden}
 .bench-frame{width:100%;height:100%;transform:scale(var(--s,.5));border-radius:calc(var(--r,28) * 1px);overflow:hidden;will-change:transform}
 .bench-film{width:100%;height:100%;object-fit:cover}
@@ -37,10 +37,10 @@ img,video{display:block;max-width:100%}
 .bl{font:300 clamp(2.4rem,6vw,5.6rem)/1 var(--serif);font-style:italic;position:absolute;bottom:0;left:0;white-space:nowrap;opacity:0;transform:translateY(20px);transition:opacity .6s,transform .6s;text-shadow:0 2px 24px rgba(0,0,0,.7)}
 .bl.on{opacity:1;transform:none}
 .bl .n{font:500 .9rem/1 var(--sans);font-style:normal;color:var(--gold);display:block;margin-bottom:.8rem}
-.bench-text{position:relative;z-index:3;max-width:38rem;margin:-60vh 0 0 auto;padding:0 var(--g) 18vh}
+.bench-intro{padding:clamp(7rem,16vh,11rem) var(--g) clamp(2rem,6vh,4rem);display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.bench-text{grid-column:2}
 .bench-text h2,.cuts-head h2,.ways h2{font:300 clamp(2.2rem,4.6vw,4.2rem)/1.02 var(--serif);letter-spacing:-.02em}
 .bench-text p,.cuts-head p{color:var(--mut);margin-top:1.4rem;font-size:1.1rem;max-width:30rem}
-.bench-text{background:linear-gradient(transparent,var(--ink) 30%)}
 /* cuts */
 .cuts{padding:clamp(6rem,14vh,10rem) var(--g);background:var(--ink2)}
 .cuts-head{display:grid;grid-template-columns:1.2fr 1fr;gap:2rem;align-items:end;margin-bottom:clamp(3rem,7vh,5rem)}
@@ -79,3 +79,5 @@ cite{display:block;font:500 1rem var(--sans);font-style:normal;color:var(--gold)
  .facet{display:none}
  .bench{height:260vh}
 }
+.bench-line{position:absolute;left:var(--g);bottom:clamp(2rem,8vh,5rem);z-index:2;font:300 clamp(2.2rem,5.4vw,5.2rem)/1 var(--serif);font-style:italic;opacity:var(--o,0);transform:translateY(calc((1 - var(--o,0))*24px));text-shadow:0 2px 24px rgba(0,0,0,.7);max-width:calc(100% - 2*var(--g))}
+@media(max-width:800px){.bench-intro{grid-template-columns:1fr}.bench-text{grid-column:1}.bench{height:200vh}}
